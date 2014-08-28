@@ -534,7 +534,7 @@
     'body': '<% $1 %>'
   'erb_loop_block':
     'prefix': '=loop'
-    'body': '<% $1.each do |$2| %>\n\t<%= $3 %>\n<% end %>\n$4'
+    'body': '<% ${1:array}.each do |${2:element}| %>\n\t<%= $3 %>\n<% end %>\n$4'
   'link_to':
     'prefix': 'lt'
     'body': '<%= link_to "${1:name}", ${2:path} %>'

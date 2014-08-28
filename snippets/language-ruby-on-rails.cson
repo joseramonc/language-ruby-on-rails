@@ -93,6 +93,9 @@
   'assert_no_difference':
     'prefix': 'asnd'
     'body': 'assert_no_difference "${1:Model}.${2:count}" do\n  $0\nend'
+  'method':
+    'prefix': 'def'
+    'body': 'def ${1:method_name}\n\t$2\nend'
 '.meta.rails.migration.create_table':
   'Create Column in Table':
     'prefix': 'mcol'

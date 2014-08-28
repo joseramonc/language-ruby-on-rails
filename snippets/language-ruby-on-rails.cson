@@ -535,6 +535,12 @@
   'link_to':
     'prefix': 'lt'
     'body': '<%= link_to "${1:name}", ${2:path} %>'
+  'content_tag':
+    'prefix': 'ctag'
+    'body': '<%= content_tag :${1:div}, ${2:nil}, ${3:key}: "${4:value}" %>'
+  'content_tag_block':
+    'prefix': 'cblock'
+    'body': '<%= content_tag :${1:div}, ${2:key}: "${3:value}" do %>\n\t$4\n<% end %>$5'
   'render (partial)':
     'prefix': 'rp'
     'body': '<%= render "${1:item}" %>'
